@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-Formulario2.html</title>
+</head>
+
+<body>
+    <p align="center">
+        <font  size="10"><strong>Salesianos Zaragoza</strong></font>
+    </p>
+    <form action="07.Fin2.html">
+        <table align="center" width="80%">
+            <tr>
+                <td align="center" colspan="2" bgcolor="grey">Datos para acceder a la Web</td>
+            </tr>
+            <tr>
+                <td>Email*</td>
+                <td><input type="email" name="correo" id="correo" size="75" required></td>
+            </tr>
+            <tr>
+                <td>Contraseña*</td>
+                <td><input type="password" name="Contraseña" id="Contraseña" placeholder="Max 10 carácteres"
+                        maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" bgcolor="grey">Datos Personales</td>
+            </tr>
+            <tr>
+                <td>Nombre*</td>
+                <td><input type="text" name="nombre" id="nombre" placeholder="Max 50 carácteres" maxlength="50"
+                        size="75" required></td>
+            </tr>
+            <tr>
+                <td>Apelidos*</td>
+                <td><input type="text" name="Apellidos" id="Apelidos" placeholder="Max 50 carácteres" maxlength="50"
+                        size="75" required></td>
+            </tr>
+            <tr>
+                <td>Fecha de Nacimiento*</td>
+                <td><input type="date" name="fecha" id="fecha" requiered></td>
+            </tr>
+            <tr>
+                <td>Teléfono</td>
+                <td><input type="tel" name="Teléfono" id="Teléfono"></td>
+            </tr>
+            <tr>
+                <td>Móvil</td>
+                <td><input type="tel" name="Móvil" id="Móvil"></td>
+            </tr>
+            <tr>
+                <td>Alumno de Salesianos</td>
+                <td><select name="Alumno de salesianos" id="Alumno de salesianos">
+                        <option value="SiASalesianos">Si</option>
+                        <option value="NoASalesianos">No</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Alumno de Cursillos</td>
+                <td><select name="Alumno de salesianos" id="Alumno de salesianos">
+                        <option value="SiACursillos">Si</option>
+                        <option value="NoACursillos">No</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Si <input type="radio" name="discapacidad" id="discapacidad" value="1">
+                    No <input type="radio" name="discapacidad" id="discapacidad" value="2">
+                </td>
+                <td>¿Tiene reconocida alguna discapacidad igual o superior al 33%?
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Si <input type="radio" name="inscrito" id="inscrito" value="1">
+                    No <input type="radio" name="inscrito" id="inscrito" value="2">
+                </td>
+                <td>¿Está vd. inscrito en el Servicio Público de Empleo como demandante? Indicar fecha &nbsp;
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Si <input type="radio" name="prestacion" id="prestacion" value="1">
+                    No <input type="radio" name="prestacion" id="prestacion" value="2">
+                </td>
+                <td>¿Está cobrando actualmente alguna prestación? Prestación por Desempleo, Subsidio o R.A.I. ¿Hasta
+                    cuando? &nbsp; &nbsp; <input type="text" size="110">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Si <input type="radio" name="situacion" id="situacion" value="1">
+                    No <input type="radio" name="situacion" id="situacion" value="2">
+                </td>
+                <td>¿Situación de exclusión social?
+                </td>
+            <tr>
+                <td colspan="2" align="center" bgcolor="grey">Currículo</td>
+            </tr>
+            <tr>
+                <td>NIF*</td>
+                <td><input type="text" name="dni" id="dni" placeholder="Max 9 carácteres" maxlength="9" required></td>
+            </tr>
+            <tr>
+                <td>País de residencia*</td>
+                <td><select name="pais" id="pais" required>
+                        <option value="">Elige un país</option>
+                        <option value="España">España</option>
+                        <option value="Francia">Francia</option>
+                        <option value="Italia">Italia</option>
+                        <option value="Andorra">Andorra</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Dirección*</td>
+                <td><input type="text" name="direccion" id="direccion" requiered size="70"></td>
+            </tr>
+            <tr>
+                <td>Población*</td>
+                <td><input type="text" name="poblacion" id="poblacion" requiered></td>
+            <tr>
+                <td>Provincia*</td>
+                <td><select name="provincia" id="provincia" required>
+                        <option value="">Elige una provincia</option>
+                        <option value="Zaragoza">Zaragoza</option>
+                        <option value="Andorralavella">Andorra la vella</option>
+                        <option value="Lugo">Lugo</option>
+                        <option value="Sevilla">Sevilla</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>CP</td>
+                <td><input type="text" name="cp" id="cp" placeholder="Max 5 números" maxlength="5"></td>
+            </tr>
+            <tr>
+                <td>Permiso de conducir</td>
+                <td><select name="permisodeconducir" id="permisodeconducir">
+                        <option value="Siconducir">Si</option>
+                        <option value="Noconducir">No</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Nivel de estudios</td>
+                <td><select name="niveldeestudios" id="niveldeestudios">
+                        <option value="sinestudios">Sin estudios</option>
+                        <option value="graduadoescolar">Graduado escolar</option>
+                        <option value="eso">Graduado Eduación Secundaria Obligatoria</option>
+                        <option value="bachiller">Bachillerato</option>
+                        <option value="gradomedio">Ciclo Formativo de Grado Medio</option>
+                        <option value="fpi">F.P.I</option>
+                        <option value="gradosuperior">Ciclo Formativo de Grado Superior</option>
+                        <option value="fpii">F.P.II.</option>
+                        <option value="unigradomedio">Universidad Grado Medio</option>
+                        <option value="licienciatura">Licienciatura</option>
+                        <option value="fpbasica">FORMACIÓN PROFESIONAL BÁSICA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Año de finalización</td>
+                <td><input type="number" name="añofinalizacion" id="añofinalizacion" step="1000"></td>
+            </tr>
+            <tr>
+                <td>Especialidades</td>
+                <td><select name="especialidades" id="especialidades">
+                        <option value="AUTOMATIZACIÓN Y ROBÓTICA INDUSTRIAL">AUTOMATIZACIÓN Y ROBÓTICA INDUSTRIAL
+                        </option>
+                        <option value="AUTOMOCIÓN">AUTOMOCIÓN</option>
+                        <option value="ELECTRICIDAD Y ELECTRÓNICA">ELECTRICIDAD Y ELECTRÓNICA</option>
+                        <option value="INFORMÁTICA">INFORMÁTICA</option>
+                        <option value="INFORMÁTICA Y COMUNICACIONES">INFORMÁTICA Y COMUNICACIONES</option>
+                        <option value="INSTALACIONES ELECTRÓTECNICAS Y AUTOMATIZADAS">INSTALACIONES ELECTRÓTECNICAS Y
+                            AUTOMATIZADAS</option>
+                        <option value="MECANIZADO">MECANIZADO</option>
+                        <option value="TELECOMUNICACIONES">TELECOMUNICACIONES</option>
+                    </select>
+                    <select name="especialidades" id="especialidades">
+                        <option value="AUTOMATIZACIÓN Y ROBÓTICA INDUSTRIAL">AUTOMATIZACIÓN Y ROBÓTICA INDUSTRIAL
+                        </option>
+                        <option value="AUTOMOCIÓN">AUTOMOCIÓN</option>
+                        <option value="ELECTRICIDAD Y ELECTRÓNICA">ELECTRICIDAD Y ELECTRÓNICA</option>
+                        <option value="INFORMÁTICA">INFORMÁTICA</option>
+                        <option value="INFORMÁTICA Y COMUNICACIONES">INFORMÁTICA Y COMUNICACIONES</option>
+                        <option value="INSTALACIONES ELECTRÓTECNICAS Y AUTOMATIZADAS">INSTALACIONES ELECTRÓTECNICAS Y
+                            AUTOMATIZADAS</option>
+                        <option value="MECANIZADO">MECANIZADO</option>
+                        <option value="TELECOMUNICACIONES">TELECOMUNICACIONES</option>
+                    </select>
+                    <select name="especialidades" id="especialidades">
+                        <option value="AUTOMATIZACIÓN Y ROBÓTICA INDUSTRIAL">AUTOMATIZACIÓN Y ROBÓTICA INDUSTRIAL
+                        </option>
+                        <option value="AUTOMOCIÓN">AUTOMOCIÓN</option>
+                        <option value="ELECTRICIDAD Y ELECTRÓNICA">ELECTRICIDAD Y ELECTRÓNICA</option>
+                        <option value="INFORMÁTICA">INFORMÁTICA</option>
+                        <option value="INFORMÁTICA Y COMUNICACIONES">INFORMÁTICA Y COMUNICACIONES</option>
+                        <option value="INSTALACIONES ELECTRÓTECNICAS Y AUTOMATIZADAS">INSTALACIONES ELECTRÓTECNICAS Y
+                            AUTOMATIZADAS</option>
+                        <option value="MECANIZADO">MECANIZADO</option>
+                        <option value="TELECOMUNICACIONES">TELECOMUNICACIONES</option>
+                    </select>
+                    <select name="especialidades" id="especialidades">
+                        <option value="AUTOMATIZACIÓN Y ROBÓTICA INDUSTRIAL">AUTOMATIZACIÓN Y ROBÓTICA INDUSTRIAL
+                        </option>
+                        <option value="AUTOMOCIÓN">AUTOMOCIÓN</option>
+                        <option value="ELECTRICIDAD Y ELECTRÓNICA">ELECTRICIDAD Y ELECTRÓNICA</option>
+                        <option value="INFORMÁTICA">INFORMÁTICA</option>
+                        <option value="INFORMÁTICA Y COMUNICACIONES">INFORMÁTICA Y COMUNICACIONES</option>
+                        <option value="INSTALACIONES ELECTRÓTECNICAS Y AUTOMATIZADAS">INSTALACIONES ELECTRÓTECNICAS Y
+                            AUTOMATIZADAS</option>
+                        <option value="MECANIZADO">MECANIZADO</option>
+                        <option value="TELECOMUNICACIONES">TELECOMUNICACIONES</option>
+                    </select>
+                    <select name="especialidades" id="especialidades">
+                        <option value="AUTOMATIZACIÓN Y ROBÓTICA INDUSTRIAL">AUTOMATIZACIÓN Y ROBÓTICA INDUSTRIAL
+                        </option>
+                        <option value="AUTOMOCIÓN">AUTOMOCIÓN</option>
+                        <option value="ELECTRICIDAD Y ELECTRÓNICA">ELECTRICIDAD Y ELECTRÓNICA</option>
+                        <option value="INFORMÁTICA">INFORMÁTICA</option>
+                        <option value="INFORMÁTICA Y COMUNICACIONES">INFORMÁTICA Y COMUNICACIONES</option>
+                        <option value="INSTALACIONES ELECTRÓTECNICAS Y AUTOMATIZADAS">INSTALACIONES ELECTRÓTECNICAS Y
+                            AUTOMATIZADAS</option>
+                        <option value="MECANIZADO">MECANIZADO</option>
+                        <option value="TELECOMUNICACIONES">TELECOMUNICACIONES</option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Otros estudios*</td>
+                <td><textarea name="otrosestudios" id="otrosestudios" cols="120" rows="5" required></textarea></td>
+            </tr>
+            <tr>
+                <td>Experiencia laboral</td>
+                <td><textarea name="elaboral" id="elaboral" cols="120" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>Cursos</td>
+                <td><textarea name="cursos" id="cursos" cols="120" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>Idiomas</td>
+                <td><textarea name="idiomas" id="idiomas" cols="120" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>Conocimientos de informática</td>
+                <td><textarea name="informatica" id="informatica" cols="120" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" bgcolor="grey">Foto y curriculum</td>
+            </tr>
+            <tr>
+                <td>Foto (jpg, gif o png)*</td>
+                <td><input type="file" name="foto" id="foto" required> <br>
+                    El nombre del archivo tiene que ser el nombre y apellidos. La foto no debe exceder los 500 kb de
+                    tamaño. En caso contrario, el alta no podrá efecturarse con éxito.</td>
+            </tr>
+            <tr>
+                <td>Curriculum (doc, docx, txt, pdf o odt)*</td>
+                <td><input type="file" name="curriculum" id="curriculum" required> <br>
+                    El nombre del archivo tiene que ser el nombre y apellidos </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" bgcolor="grey">Si tiene problemas para enviar sus archivos, tenga en
+                    cuenta los siguiente:</td>
+            </tr>
+            <tr>
+                <td>FOTO</td>
+                <td>
+                    <ul>
+                        <li>El nombre del archivo tiene que ser el nombre y apellidos</li>
+                        <li>La foto no debe exceder los 500 kb de tamaño.</li>
+                        <li>La extensión tiene que ser jpg, gif o png. Cualquier otra extensión no será válida.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>CURRICULUM</td>
+                <td>
+                    <ul>
+                        <li>El nombre del archivo tiene que ser tu nombre y apellidos.</li>
+                        <li>El fichero no debe exceder los 2000 kb de tamaño.</li>
+                        <li>La extensión tiene que sea doc, ocx, txt, odt o pdf. Cualquier otra extensión no será
+                            válida.</li>
+                    </ul>
+                    <p align="center">
+                        Si su navegador no está actualizado, pruebe a actualizar a una versión más reciente
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" bgcolor="grey">Código de seguridad</td>
+            </tr>
+            <tr>
+                <td><img src="https://agenciacolocacionzaragoza.salesianos.edu/captcha.php" alt="codigo de seguridad">
+                </td>
+                <td><input type="text" name="codigoseguridad" id="codigoseguridad"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

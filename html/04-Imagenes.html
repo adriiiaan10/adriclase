@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>04-Imagenes.html</title>
+</head>
+
+<body>
+    <img src="./imágenes/mapa.PNG" usemap="#image-map">
+
+<map name="image-map">
+    <area target="_blank" alt="ropa" title="ropa" href="https://www.pullandbear.com/" coords="368,419,594,540" shape="rect">
+    <area target="_blank" alt="playa" title="playa" href="https://www.timeout.es/madrid/es/que-hacer/cinco-playas-de-madrid" coords="1011,492,1232,635" shape="rect">
+    <area target="_blank" alt="comida" title="comida" href="https://www.ubereats.com/es/category/zaragoza-es-ar/chinese" coords="754,240,80" shape="circle">
+</map>
+</body>
+
+</html>
+
+<!--
+    La imágen se carga con todo su peso, por mucho que cambies
+    la anchura o altura, va a pesas lo mismo.
+    No es recomendable poner imágenes grandes en la web ya
+    que tardarían mucho en cargarse.
+
+    >200K es mucho, recomendable usar PIXresizer
+
+    <img>
+        src="" - Ubicación del archivo
+        alt="" Descripción de la imagen, si no se carga la imagen se verá este texto.
+        usemap=""
+            #mapaNombre, es necesario usar #
+
+    <map>
+        name="" Cada mapa necesita un nombre, la imagen deberá tener useMap.
+
+        <area>
+            shape="" Forma (Rectángulo, círculo...)
+            coords="" Coordenadas
+            Rectángulo 4 valores:
+                Punto 1: Ancho, alto
+                Punto 2: Ancho, alto
+            Ejemplo: (375, 435) (600, 530)
+    
+    https://www.image-map.net/
+
+-->
