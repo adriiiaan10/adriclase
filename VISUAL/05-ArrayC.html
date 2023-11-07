@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>05-ArraysC.html</title>
+    <script language="JavaScript">
+        var imagenes = [
+            "./imagenes/unnamed.png",
+            "./imagenes/farra.jpg",
+            "./imagenes/sloth-serious.gif",
+            "./imagenes/quevedo.png",
+            "./imagenes/sloth-tired2.gif",
+            "./imagenes/poridentidad.jpg",
+            "./imagenes/helado 1.jpg",
+            "./imagenes/ESPAÑA.png",
+            "./imagenes/2016-12-25.jpg",
+            "./imagenes/helado_interior.jpg"
+        ];
+
+        function visor() {
+            var randomIndex = Math.floor(Math.random() * imagenes.length);
+            var randomImage = imagenes[randomIndex];
+            document.getElementById('random-number').textContent = randomIndex +1;
+            document.getElementById('foto').src = randomImage;
+        }
+    </script>
+</head>
+
+<body>
+    <div><input type="button" value="Cambiar" onclick="visor()"></div><br>
+    <img name="foto" id="foto" src="./imagenes/unnamed.png" width="200px">
+    <p>Número Aleatorio: <span id="random-number">1</span></p>
+</body>
+
+</html>

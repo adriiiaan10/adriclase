@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>03-Noticias.html</title>
+<script>
+    function cambiar()
+    {
+        if(idioma.value==1)
+        {
+            espanol.style.display="";
+            polaco.style.display="none"
+            chino.style.display="none"
+        }
+        if(idioma.value==2)
+        {
+            espanol.style.display="none";
+            polaco.style.display=""
+            chino.style.display="none"
+        }
+        if(idioma.value==3)
+        {
+            espanol.style.display="none";
+            polaco.style.display="none"
+            chino.style.display=""
+        }
+    }
+</script>
+</head>
+<body>
+    <table align="center" width="50%" border="1">
+        <tr>
+            <td align="center">
+                <select name="idioma" id="idioma" onchange="cambiar()">
+                    <option value="">Elige idioma
+                    <option value="1">Español
+                    <option value="2">Polaco
+                    <option value="3">Chino
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td name="espanol" id="espanol">
+                <div>
+                    <h2>Primera noticia</h2>
+                    La finalidad de esta asignación, según recoge la Casa Real, es asegurar que la Jefatura del Estado
+                    disponga de
+                    una dotación presupuestaria suficiente para que el Jefe del Estado pueda desarrollar su labor con la
+                    independencia inherente a sus funciones constitucionales.
+                    El jefe del Estado, Felipe VI, es quien recibe y distribuye el dinero de los PGE para el
+                    sostenimiento de su
+                    Familia y Casa, de acuerdo con la Constitución Española.
+                    Sueldos de la Famila Real. En la Familia Real solo tienen asignado un sueldo los reyes Felipe VI y
+                    Letizia, y la
+                    reina Sofía y por ahora no disponen de salario las princesas Leonor y Sofía. Por su parte, el rey
+                    emérito ya no
+                    tiene un sueldo público. En 2020, Casa Real anunció que Felipe VI renunciaba a la herencia de su
+                    padre y le
+                    retiraba su asignación anual.
+
+                    [Entra en el buscador de sueldos públicos de Transparentia para consultar cuánto cobran]
+
+                    En 2023 las retribuciones de la Familia Real también aumentaron un 2,5%, de acorde al aumento
+                    acordado para
+                    funcionarios públicos y altos cargos del Gobierno.
+                    La princesa Leonor renunció al sueldo asignado a cadetes (417 euros al mes) durante su formación
+                    militar que se
+                    desarrollará a lo largo de tres años, según afirmó la Casa Real a Newtral.es. Lo que se desconoce es
+                    si Felipe
+                    VI le asignará un sueldo una vez cumpla la mayoría de edad.
+                    Felipe VI tuvo un salario asignado antes de ser Rey
+                    El rey Felipe VI cumplió 18 años el 30 de enero de 1986. En la página web de la Casa Real, en la
+                    parte de
+                    transparencia solo hay datos desde 2011 pero según recoge este organismo (y tal y como confirman a
+                    Newtral.es
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td name="polaco" id="polaco" style="display: none;">
+                <div>
+                    <!--Oculta visibility: hidden oculta pero deja hueco y display:none oculta y no deja hueco-->
+                    <h2>Druga wiadomość</h2>
+                    Nie ma prawa regulującego postać księżnej Asturii i będzie ona robić to, co ustanowi król Felipe VI,
+                    Kto
+                    Zadecyduje również, czy Leonor zacznie otrzymywać wynagrodzenie, mówi Antonio Torres del Moral,
+                    doktor prawa.
+                    Konstytucyjny w UNED. Spadkobierca nie ma osobowości prawnej i jego głównym zadaniem jest
+                    "Poczekaj na
+                    Niech nadejdzie twoja kolej”, aby panować, a tymczasem trenuj do tego.
+
+                    Jak wyjaśniono Newtral.es, Marina Fernández, dyrektor ds. komunikacji w Międzynarodowej Szkole im
+                    Protokół,
+                    Agenda księżniczki „nie ulegnie drastycznym zmianom, bo w tej chwili jest to priorytet dla Domu
+                    Królewskiego
+                    Jest
+                    szkolenie wojskowe, a później szkolenie uniwersyteckie.
+
+                    W tym sensie księżniczka Leonor, podobnie jak ona, przechodzi szkolenie do celów wojskowych
+                    ojciec,
+                    ponieważ kiedy zostanie głową państwa, obejmie także stanowisko dowódcy generalnego armii. Pierwszy
+                    ha
+                    rozpoczął w Generalnej Akademii Wojskowej w Saragossie, a następnie będzie kontynuował swoje
+                    przygotowania w Szkole Marynarki Wojennej
+                    Wojskowych i w Akademii Generalnej
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td name="chino" id="chino" style="display: none;">
+                <div>
+                    <h2>第三条新闻</h2>
+                    丹麦。丹麦王储 Frederik André 每月收到 1,869,573 丹麦克朗
+                    –250,500
+                    大约欧元，其中玛丽·伊丽莎白王妃获得10%。
+                    (*) 更新：本文已更新，添加了费利佩六世开始拥有权力的年份
+                    A
+                    作为阿斯图里亚斯亲王的经济任务。
+
+                    来源
+                    真正的家
+
+                    安东尼奥·托雷斯·德尔·莫拉尔 (Antonio Torres del Moral)，UNED 宪法学博士
+
+                    丹麦王室国家公民名单
+
+                    荷兰王室金融
+
+                    国际礼宾学院传播总监玛丽娜·费尔南德斯 (Marina Fernández)
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

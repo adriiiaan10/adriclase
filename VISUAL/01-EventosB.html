@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>1-EventosB.html</title>
+    <script language="JavaScript">
+        function aumentar() {
+            //if(document.getElementById("foto").width > 400) 
+            if(foto.width > 800)
+            {
+                window.alert("Ha llegado al tope")
+            }
+            else
+            {
+            foto.width = foto.width + 10;
+            }
+        }
+
+        function disminuir() {
+            if(foto.width < 150)
+            {
+                window.alert("Ha llegado al tope")
+            }
+            else
+            {
+            foto.width = foto.width - 10;
+            }
+        }
+    </script>
+</head>
+<!-- <body style="background-color: aqua;">--> <!--Atributo de estilos-->
+
+<body name="fuente" id="fuente" bgcolor="#99ccff"> <!--Atributo etiqueta-->
+    <input type="button" value="+" onclick="aumentar()"> <input type="button" value="-" onclick="disminuir()">
+    <table border="1">
+        <tr>
+            <td bgcolor="red" onclick="fuente.bgColor=this.bgColor">ROJO</td>
+            <td bgcolor="yellow" onclick="fuente.bgColor=this.bgColor">AMARILLO</td>
+            <td bgcolor="brown" onclick="fuente.bgColor=this.bgColor">MARRON</td>
+        </tr>
+    </table>
+    <br><br>
+    <select name="tabla" id="tabla" onchange="foto.src=tabla.value">
+        <option value="">Elige imagen
+        <option value="./imagenes/quevedo.png">Quevedo
+        <option value="./imagenes/farra.jpg">Farra
+        <option value="./imagenes/Helado-de-Vainilla-Parve-1.jpg">Helado de vainilla
+        <option value="./imagenes/Carrito-de-Helados.jpg">EL carrito
+    </select>
+    <br><br>
+    <img src="./imagenes/como_hacer_helado_de_menta_28964_orig.jpg" name="foto" id="foto">
+</body>
+
+</html>
+<!--
+    si hay desplegable es con onchange
+    function tiene que tener el id de imagen no de body
+
+-->

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>05-Arrays.html</title>
+    <script language="JavaScript">
+        var a = 1;
+        function visor() {
+            a = a + 1;
+            if (a == 1) {
+                foto.src = "./imagenes/unnamed.png";
+            }
+            if (a == 2) {
+                foto.src = "./imagenes/farra.jpg";
+            }
+            if (a == 3) {
+                foto.src = "./imagenes/quevedo.png";
+            }
+            if (a == 4) {
+                foto.src = "./imagenes/sloth-serious.gif";
+                a=0;
+            }
+            if (a>4) {
+                a=1;
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Cambiar" onclick="visor()">
+    <img name="foto" id="foto" src="./imagenes/unnamed.png" width="200px">
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>04-Menus.html</title>
+<script language="JavaScript">
+    function gradoMedio()
+    {
+        if (menuGM.style.display=="none")
+        {
+        menuGM.style.display="";
+        }
+        else
+        {
+        menuGM.style.display="none";    
+        }
+    }
+    function gradoSuperior()
+    {
+        if (menuGS.style.display=="none")
+        {
+        menuGS.style.display="";
+        }
+        else
+        {
+        menuGS.style.display="none";    
+        }
+    }
+    function Bachillerato()
+    {
+        if (Bachi.style.display=="none")
+        {
+        Bachi.style.display="";
+        }
+        else
+        {
+        Bachi.style.display="none";    
+        }
+    }
+</script>
+</head>
+<body>
+    <table style="cursor: pointer;">
+        <tr>
+            <td onclick="gradoMedio()"> Ciclo formativo Grado Medio </td>
+        </tr>
+        <tr>
+            <td name="menuGM" id="menuGM" style="display: none;">
+                <ul>
+                    <li> Informática </li>
+                    <li> Automoción </li>
+                    <li> Mecanizado </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td onclick="gradoSuperior()"> Ciclo formativo Grado Superior </td>
+        </tr>
+        <tr>
+            <td name="menuGS" id="menuGS" style="display: none;">
+                <ul>
+                    <li> Bachillerato </li>
+                    <li> Ciencias </li>
+                    <li> Humanizado </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td onclick="Bachillerato()">Bachillerato</td>
+        </tr>
+        <tr>
+            <td name="Bachi" id="Bachi" style="display: none;">
+                <ul>
+                    <li> Informática </li>
+                    <li> Robótica </li>
+                    <li> Mecanizado </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+<!--        function gradoMedio()
+    {
+        if (menuGM.style.display=="none")
+        {
+        menuGM.style.display="";
+        }
+        else
+        {
+        menuGM.style.display="none";    
+        }
+    }   abrir y cerrar la tabla
+-->

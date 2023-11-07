@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>05-ArraysC.html</title>
+    <script language="JavaScript">
+        var aleatorio = 0;
+        function generar() {
+            aleatorio=Math.floor(Math.random()*10)+1;
+        }
+        function comprobar() {
+            if(numero.value > aleatorio)
+            {
+                window.alert("El nº introducido es mayor");
+            }
+            if(numero.value < aleatorio)
+            {
+                window.alert("El nº introducido es menor");
+            }
+            if(numero.value == aleatorio)
+            {
+                window.alert("¡¡¡¡¡¡¡Has Acertadooooooo!!!!!!!!");
+            }
+        }
+    </script>
+</head>
+
+<body onload="generar()">
+    <input type="text" name="numero" id="numero">
+    <br>
+    <input type="button" value="Comprobar" onclick="comprobar()">
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+        <html>
+
+        <head>
+            <meta charset="UTF-8" />
+            <title>04-MenusHorizontal.html</title>
+            <script language="JavaScript">
+                function cambiar(opcion,ocultar1,ocultar2) 
+                {
+                    ocultar1.style.visibility="hidden";
+                    ocultar2.style.visibility="hidden";
+                    if (opcion.style.visibility == "hidden")
+                    {
+                        opcion.style.visibility="";
+                    }
+                    else 
+                    {
+                        opcion.style.visibility="hidden"; 
+                    }
+                }
+            </script>
+        </head>
+
+<body>
+    <table border="1" align="center" cellpadding="5" cellspacing="5" style="cursor: pointer;">
+        <tr>
+            <td align="center" onclick="cambiar(menuGM,menuGS,menuBAC)"> Ciclo formativo Grado Medio </td>
+            <td align="center" onclick="cambiar(menuGS,menuGM,menuBAC)"> Ciclo formativo Grado Superior </td>
+            <td align="center" onclick="cambiar(menuBAC,menuGM,menuGS)">Bachillerato</td>
+        </tr>
+        <tr>
+            <td name="menuGM" id="menuGM" style="visibility: hidden;">
+                <ul>
+                    <li> Informática </li>
+                    <li> Automoción </li>
+                    <li> Mecanizado </li>
+                </ul>
+            </td>
+            <td name="menuGS" id="menuGS" style="visibility: hidden;">
+                <ul>
+                    <li> Bachillerato </li>
+                    <li> Ciencias </li>
+                    <li> Humanizado </li>
+                </ul>
+            </td>
+            <td name="menuBAC" id="menuBAC" style="visibility: hidden;">
+                <ul>
+                    <li> Matematicas </li>
+                    <li> Robótica </li>
+                    <li> Mecanizado </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

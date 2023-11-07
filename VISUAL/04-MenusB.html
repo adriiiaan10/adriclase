@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>04-MenusB.html</title>
+<script language="JavaScript">
+    function cambiar(opcion)
+    {
+        if(opcion.style.display=="none")
+        {
+            opcion.style.display="";
+        }
+        else
+        {
+            opcion.style.display="none";
+        }
+    }
+</script>
+</head>
+<body>
+    <table style="cursor: pointer;">
+        <tr>
+            <td onclick="cambiar(menuGM)"> Ciclo formativo Grado Medio </td>
+        </tr>
+        <tr>
+            <td name="menuGM" id="menuGM" style="display: none;">
+                <ul>
+                    <li> Informática </li>
+                    <li> Automoción </li>
+                    <li> Mecanizado </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td onclick="cambiar(menuGS)"> Ciclo formativo Grado Superior </td>
+        </tr>
+        <tr>
+            <td name="menuGS" id="menuGS" style="display: none;">
+                <ul>
+                    <li> Bachillerato </li>
+                    <li> Ciencias </li>
+                    <li> Humanizado </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td onclick="cambiar(Bachi)">Bachillerato</td>
+        </tr>
+        <tr>
+            <td name="Bachi" id="Bachi" style="display: none;">
+                <ul>
+                    <li> Informática </li>
+                    <li> Robótica </li>
+                    <li> Mecanizado </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
