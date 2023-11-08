@@ -18,12 +18,12 @@
             "./imagenes/helado_interior.jpg"
         ];
 
-        function visor() {
+        function visor() {  
             var randomIndex = Math.floor(Math.random() * imagenes.length);
             var randomImage = imagenes[randomIndex];
             document.getElementById('random-number').textContent = randomIndex +1;
             document.getElementById('foto').src = randomImage;
-        }
+        }   // a=Math.floor(Math.random()*10)+1;
     </script>
 </head>
 

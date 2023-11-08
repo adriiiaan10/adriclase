@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Juego_aleatorio.html</title>
+    <script language="JavaScript">
+        var aleatorio = 0;
+        var intentos = 0;
+        var inicio = 1;
+        var fin = 100;
+        function generar() {
+            aleatorio = Math.floor(Math.random() * 100) + 1;
+            mensaje.innerHTML="<h3>Introduce un nº entre el 1 y el 100 </h3>";
+        }
+        function comprobar() {
+            if (numero.value > aleatorio) {
+                fin = numero.value;
+                mensaje.innerHTML="<h2>Introduce un nº entre " + inicio + " y " +fin+" </h2>";
+                intentos = intentos + 1;
+            }
+            if (numero.value < aleatorio) {
+                inicio = numero.value;
+                mensaje.innerHTML="<h2>Introduce un nº entre " + inicio + " y " +fin+ "</h2>";
+                intentos = intentos + 1;
+            }
+            if (numero.value == aleatorio) {
+                mensaje.innerHTML="<h2>¡¡¡¡¡¡¡Has Acertadooooooo!!!!!!!!</h2>";
+            }
+            if (intentos == 5) {
+                juego.style.display = "none";
+                finTexto.innerHTML="Has PERDIDO!!! El nº era:"+aleatorio;
+                finTexto.style.display = "";
+            }
+        }
+
+    </script>
+</head>
+
+<body onload="generar()"> <!--¡ONLOAD SOLO SE PUEDE USAR EN EL BODY! SIEMPRE LO PONE EN EL EXAMEN-->
+    <div name="juego" id="juego"> <!--div para que solo desparezca esto y no se pueda seguir jugando-->
+        <p name="mensaje" id="mensaje"></p>
+        <input type="text" name="numero" id="numero">
+        <br>
+        <input type="button" value="Comprobar" onclick="comprobar()">
+    </div>
+    <h1 name="finTexto" id="finTexto" style="display:none"></h1>
+
+</body>
+
+</html>
