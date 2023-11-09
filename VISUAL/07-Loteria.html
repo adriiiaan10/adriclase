@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-Loteria.html</title>
+    <script language="JavaScript">
+        var index;
+        var imagenes = new Array()
+            imagenes[0] = "./imagenes/0.jpg"
+            imagenes[1] = "./imagenes/1.jpg",
+            imagenes[2] = "./imagenes/2.jpg",
+            imagenes[3] = "./imagenes/3.jpg",
+            imagenes[4] = "./imagenes/4.jpg",
+            imagenes[5] = "./imagenes/5.jpg",
+            imagenes[6] = "./imagenes/6.jpg",
+            imagenes[7] = "./imagenes/7.jpg",
+            imagenes[8] = "./imagenes/8.jpg",
+            imagenes[9] = "./imagenes/9.jpg"
+
+        function visor(){
+            a = Math.floor(Math.random(0,9) * 9) + 1;
+            a1 = Math.floor(Math.random(0,9) * 9) + 1;
+            a2 = Math.floor(Math.random(0,9) * 9) + 1;
+            a3 = Math.floor(Math.random(0,9) * 9) + 1;
+            a4 = Math.floor(Math.random(0,9) * 9) + 1;
+            foto.src = imagenes[a];
+            foto1.src = imagenes[a1];
+            foto2.src = imagenes[a2];
+            foto3.src = imagenes[a3];
+            foto4.src = imagenes[a4];
+            temp1 = setTimeout("visor()", 10);
+            btnArrancar.style.display = "none";
+            btnParar.style.display = "";
+        }
+
+        function parar(){
+            clearTimeout(temp1);
+            btnArrancar.style.display = "";
+            btnParar.style.display = "none";
+        }
+    </script>
+</head>
+<body onload="visor()">
+    <div><input type="button"value="Arrancar" onclick="visor()" style="display: block;" name="btnArrancar" id="btnArrancar"><br>
+    <input type="button"value="Parar" onclick="parar()" style="display: none;" name="btnParar" id="btnParar"></div>
+    <img name="foto" id="foto" src="" width="200px">
+    <img name="foto1" id="foto1" src="" width="200px">
+    <img name="foto2" id="foto2" src="" width="200px">
+    <img name="foto3" id="foto3" src="" width="200px">
+    <img name="foto4" id="foto4" src="" width="200px">
+
+</body>
+
+</html>

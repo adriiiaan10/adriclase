@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-ArraysC.html</title>
+    <script language="JavaScript">
+        var index
+        var imagenes = new Array()
+        imagenes[1] = "./imagenes/unnamed.png",
+            imagenes[2] = "./imagenes/farra.jpg",
+            imagenes[3] = "./imagenes/sloth-serious.gif",
+            imagenes[4] = "./imagenes/quevedo.png",
+            imagenes[5] = "./imagenes/sloth-tired2.gif",
+            imagenes[6] = "./imagenes/poridentidad.jpg",
+            imagenes[7] = "./imagenes/helado 1.jpg",
+            imagenes[8] = "./imagenes/ESPAÑA.png",
+            imagenes[9] = "./imagenes/2016-12-25.jpg",
+            imagenes[10] = "./imagenes/helado_interior.jpg"
+
+        function visor() {
+            a = Math.floor(Math.random() * 9) + 1;
+            foto.src = imagenes[a];
+            temp1 = setTimeout("visor()", 10);
+            btnArrancar.style.display = "none";
+            btnParar.style.display = "";
+        }
+        function parar() {
+            clearTimeout(temp1);
+            btnArrancar.style.display = "";
+            btnParar.style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <div><input type="button" value="Arrancar" onclick="visor()" style="display: block;" name="btnArrancar"
+            id="btnArrancar"><br>
+        <input type="button" value="Parar" onclick="parar()" style="display: none;" name="btnParar" id="btnParar">
+    </div>
+    <img name="foto" id="foto" src="./imagenes/unnamed.png" width="200px">
+</body>
+
+</html>
