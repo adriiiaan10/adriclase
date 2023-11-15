@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09-Movimientos.html</title>
+    <script language="JavaScript">
+        var izdo = 0;
+        var sup = 0;
+        var intentos = 0;
+        var b = 0;
+
+        var contador = 3;
+
+        function mover() {
+            izdo = Math.floor(Math.random() * 800);
+            sup = Math.floor(Math.random() * 500);
+            mosquito1.style.left = izdo + "px";
+            mosquito1.style.top = sup + "px";
+            izdo = Math.floor(Math.random() * 800);
+            sup = Math.floor(Math.random() * 500);
+            mosquito2.style.left = izdo + "px";
+            mosquito2.style.top = sup + "px";
+            izdo = Math.floor(Math.random() * 800);
+            sup = Math.floor(Math.random() * 500);
+            mosquito3.style.left = izdo + "px";
+            mosquito3.style.top = sup + "px";
+            setTimeout("mover()", 700);
+        }
+
+        function comprobar(elemento) {
+            elemento.style.display = "none";
+
+            contador = contador - 1
+            
+            if (contador == 0){
+                premio.style.display = "";
+                console.log("GANASTEEEEEEE")
+                fondo.style.display="none";
+                premio.style.display="";
+                titulo1.style.display="";
+            }
+        }
+
+        function intentis() {
+            b = b + 1;
+            console.log(b)
+            if (b == 7) {
+                console.log("muerto")
+                fin.style.display = "block";
+                fondo.style.display="none";
+                mosquito1.style.display="none";
+                mosquito2.style.display="none";
+                mosquito3.style.display="none";
+            }
+        }
+
+    </script>
+</head>
+
+<body onload="mover()" style="margin: 0;overflow: hidden;">
+    <img src="./imagenes/selva.jpg" alt="" id="fondo" width="1670" onclick="intentis()" name="tex2" id="tex2" style="display: block;" >
+    <img name="mosquito1" id="mosquito1" src="./imagenes/mosquito.png" width="200" style="position: absolute;"
+        onclick="comprobar(mosquito1)">
+    <img name="mosquito2" id="mosquito2" src="./imagenes/ousmane-dembele.jfif" width="200" style="position: absolute;"
+        onclick="comprobar(mosquito2)">
+    <img name="mosquito3" id="mosquito3" src="./imagenes/delegao.png" width="200" style="position: absolute;"
+        onclick="comprobar(mosquito3)">
+    <h1 name="titulo1" id="titulo1" style="display: none;">TE LIBRASTE RECORCHOLIS! <br><img src="./imagenes/atleti.jpg" name="premio" id="premio" style="display: none;"></h1>
+    </div>
+    <h1 name="fin" id="fin" style="display:none">TE PICO LA COBRA TAKA TAKA  <br>  <img src="./imagenes/COBRA.png"></h1>
+</body>
+
+</html>

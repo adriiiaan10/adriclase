@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08-Captcha.html</title>
+    <script language="JavaScript">
+        imagenes=new Array()
+        imagenes[1]="./imagenes/captcha1.png";
+        imagenes[2]="./imagenes/captcha2.png";
+        imagenes[3]="./imagenes/captcha3.png";
+        imagenes[4]="./imagenes/captcha4.png";
+        imagenes[5]="./imagenes/captcha5.png";
+        imagenes[6]="./imagenes/captcha6.png";
+        imagenes[7]="./imagenes/captcha7.png";
+        imagenes[8]="./imagenes/captcha8.png";
+        imagenes[9]="./imagenes/captcha9.png";
+        imagenes[10]="./imagenes/captcha10.png";
+
+        texto=new Array()
+        texto[1]="TK58P";
+        texto[2]="B4T9S";
+        texto[3]="WB3CX";
+        texto[4]="MCSXH";
+        texto[5]="9M4BP";
+        texto[6]="DT6JX";
+        texto[7]="N8C6H";
+        texto[8]="6AR8R";
+        texto[9]="DWXM5";
+        texto[10]="4NV3A";
+        var a=0;
+        function generar(){
+            a=Math.floor(Math.random()*10)+1;
+            foto.src=imagenes[a];
+        }
+
+        function chequear(){
+            if(dato.value==texto[a]){
+                //window.alert("Has acertado");
+                window.open("http://zaragoza.salesianos.edu");
+            }
+            else{
+                window.alert("Has fallado. Intentalo de nuevo");    
+            }
+        }
+    </script>
+</head>
+<body onload="generar()">
+<img name="foto" id="foto">
+<br>
+<input type="text" name="dato" id="dato">
+<input type="button" value="Chequear" onclick="chequear()">
+</body>
+</html>
+<!--Boton para volver a generar captcha
+controlar intentos. Si en 3 intentos no lo consigue Hacer algo-->
+<!--
+    Un ejercicio de captcha similar al de saludinforma donde sale una frase con una palabra destacada o un ejercicio con una tabla de imagenes donde el usuario tenga que marcar algunas de ellas para superarlo
+-->
